@@ -1,9 +1,18 @@
 import React from "react";
 import Section from "../components/Section";
+// import SGCartoon from "../assets/ed_bitmoji.png"
+
 
 export default function Education() {
   return (
     <Section id="education" title="Education">
+      {/* <div className='col-12 mb-5 mb-lg-0' data-aos='fade-up'>
+          <img
+            src={SGCartoon}
+            alt="Harsha Cartoon"
+            style={{height: '40vh', width: '40vh', marginBottom:'1em', position:"relative", right:"auto"}}
+          />
+        </div> */}
       <div className="d-flex flex-column flex-md-row justify-content-between mb-5">
         <div className="flex-grow-1">
           <h3 className="mb-0">NATIONAL INSTITUTE OF TECHNOLOGY KARNATAKA, SURATHKAL</h3>

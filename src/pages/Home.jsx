@@ -1,7 +1,7 @@
 import React from "react"
 import Section from "../components/Section"
 import ResumePDF from "../assets/HarshaResume.pdf"
-import SGCartoon from "../assets/my_bitmoji-bg.png"
+import SGCartoon from "../assets/h_bitmoji.png"
 import { FaFacebookF, FaGithub, FaLinkedinIn, FaTwitter, FaInstagram } from "react-icons/fa"
 
 const SocialIcon = ({ href, icon }) => {
