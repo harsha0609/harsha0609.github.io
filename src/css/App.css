@@ -1,8 +1,8 @@
 /* Globals */
 @import url('https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700');
 :root {
-  --primary: #bd5d38;
-  --gradient: linear-gradient(90deg, #bd5d38, #ff6e36);
+  --primary: #1b6aba;
+  --gradient: linear-gradient(90deg, #3883bd, #36afff);
 }
 html {
   scroll-behavior: smooth;
@@ -73,7 +73,7 @@ p.lead {
   text-transform: uppercase;
 }
 #sideNav .navbar-toggler:focus {
-  outline-color: #d48a6e;
+  outline-color: #2c79c7;
 }
 .social-icons .social-icon {
   display: inline-flex;
@@ -91,7 +91,7 @@ p.lead {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #bd5d38;
+  background-color: #387fbd;
 }
 .dev-icons {
   font-size: 3rem;
@@ -220,7 +220,7 @@ section.resume-section .resume-section-content {
   margin: 0;
 }
 #contact .contact-direct .item span {
-  color: #ff6e36;
+  color: #338acd;
   font-size: 24px;
   padding: 20px;
 }
@@ -228,7 +228,7 @@ section.resume-section .resume-section-content {
   width: 12px;
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, transparent, rgba(203, 100, 61, 0.92));
+  background: linear-gradient(to bottom, transparent, rgba(59, 131, 203, 0.92));
   border-radius: 6px;
 }
 /* Media query */

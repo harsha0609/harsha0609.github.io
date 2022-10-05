@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Nav, Navbar } from 'react-bootstrap'
 import { motion } from 'framer-motion'
-import Avatar from '../assets/avatar.jpg'
+import Avatar from '../assets/harsha_pic.jpeg'
 
 import {ThemeProvider} from "styled-components";
 import { GlobalStyles } from "../css/GlobalStyles";
@@ -57,7 +57,7 @@ export default function Navigation() {
       >
         <Navbar.Brand onClick={() => (window.location = '/#about')}>
           <div className='d-flex flex-row p-1'>
-            <span className='d-block d-lg-none ps-2'>Sagnik Ghosh</span>
+            <span className='d-block d-lg-none ps-2'>Harsha vardhan</span>
             <span className='d-block d-lg-none ps-3'>
               <div className="SunMoon" onClick={() => setIsDarkMode(!isDarkMode)}>
                 <div>{isDarkMode === true ? <CgSun color='#ffc107' size='2rem' /> : <BiMoon color="#007BFF" size='2rem' />}</div>
@@ -66,9 +66,9 @@ export default function Navigation() {
           </div>
           <span className='d-none d-lg-block'>
             <motion.img
-              className='img-fluid img-profile rounded-circle mx-auto mb-2'
+              className='img-fluid img-profile rounded-circle mx- mb-2'
               src={Avatar}
-              alt='Sagnik Ghosh'
+              alt='Harsha vardhan'
               drag
               dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
               dragElastic={0.1}

@@ -21,7 +21,7 @@ const Contact = () => {
     }
 
     alert(`Thanks ${formData.name}, I will shortly connect with you!`)
-    axios.post('https://formspree.io/f/xpzkodjv', formData, {
+    axios.post('https://formspree.io/f/moqbwydk', formData, {
       Accept: 'application/json',
     })
     setFormData({})
@@ -90,7 +90,7 @@ const Contact = () => {
                   <span>
                     <ImLocation />
                   </span>
-                  <p>Howrah, West Bengal, India</p>
+                  <p>Bangalore, Karnataka, India</p>
                 </div>
               </div>
 
@@ -99,26 +99,31 @@ const Contact = () => {
                   <span>
                     <FaPhoneAlt />
                   </span>
-                  <p>+91 7044941540</p>
+                  <p>+91 9902488769</p>
                 </div>
               </div>
             </div>
           </div>
           <div className='contact-map'>
-            <iframe
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.8264719635495!2d77.54903201521644!3d12.982948218141038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3df211c9f48d%3A0x891231bbcb507bb5!2s951%2C%2065th%20Cross%20Rd%2C%205th%20Block%2C%20Rajajinagar%2C%20Bengaluru%2C%20Karnataka%20560010!5e0!3m2!1sen!2sin!4v1664953087739!5m2!1sen!2sin" frameBorder='0'
+              allowFullScreen=''
+              aria-hidden='false'
+              title='Contact Me'
+              tabIndex='0'></iframe>
+            {/* <iframe
               src='https://www.google.com/maps/embed/v1/place?q=place_id:ChIJlwFf1LJ5AjoRvDWWviQkk_U&key=AIzaSyAfIwaJqCMa9cw8u754GeIMuDwMqQYNSa8'
               frameBorder='0'
               allowFullScreen=''
               aria-hidden='false'
               title='Contact Me'
               tabIndex='0'
-            ></iframe>
+            ></iframe> */}
           </div>
         </div>
       </div>
 
       <p className='py-3 m-0 mt-5 text-center text-secondary'>
-        Made with ❤ by Sagnik
+        Made with ❤ by Harsha
       </p>
     </Section>
   )

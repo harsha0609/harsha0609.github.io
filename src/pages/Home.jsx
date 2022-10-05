@@ -1,7 +1,7 @@
 import React from "react"
 import Section from "../components/Section"
-import ResumePDF from "../assets/Sagnik Resume.pdf"
-import SGCartoon from "../assets/sagnik_cartoon.png"
+import ResumePDF from "../assets/HarshaResume.pdf"
+import SGCartoon from "../assets/my_bitmoji-bg.png"
 import { FaFacebookF, FaGithub, FaLinkedinIn, FaTwitter, FaInstagram } from "react-icons/fa"
 
 const SocialIcon = ({ href, icon }) => {
@@ -20,23 +20,23 @@ const SocialIcon = ({ href, icon }) => {
 export default function Home() {
   const icons = [
     {
-      href: "https://www.linkedin.com/in/sagnik-ghosh-564574199",
+      href: "https://www.linkedin.com/in/harsha-vardhan-946b6515a",
       icon: <FaLinkedinIn />,
     },
     {
-      href: "https://github.com/sagnikghoshcr7",
+      href: "https://github.com/harsha0609",
       icon: <FaGithub />,
     },
     {
-      href: "https://twitter.com/sagnikghoshcr7",
+      href: "https://twitter.com/harsha_2595",
       icon: <FaTwitter />,
     },
     {
-      href: "https://www.facebook.com/profile.php?id=100036939404474",
+      href: "https://www.facebook.com/harsha.vardhan.7509",
       icon: <FaFacebookF />,
     },
     {
-      href: "https://www.instagram.com/sagnikghoshcr7",
+      href: "https://www.instagram.com/var_harsha3",
       icon: <FaInstagram />,
     },
   ]
@@ -46,32 +46,33 @@ export default function Home() {
       <div className='row justify-content-between'>
         <div className='col-md-6 order-last order-lg-first' data-aos='fade-up'>
           <h1 className="mb-0">
-            Sagnik
-            <span className="text-primary" style={{paddingLeft: '2vw'}}>Ghosh</span>
+            Harsha
+            <span className="text-primary" style={{paddingLeft: '2vw'}}>Vardhan</span>
           </h1>
           <div className="subheading mb-3">
             <span style={{paddingRight: '0.3vw'}}>
-              Impossible is nothing!
+              Remember when you wanted what you currently have
             </span>
             <span style={{paddingRight: '0.3vw'}}>
               ·
             </span>
-            <a href="mailto:sagnikghoshmandra@gmail.com" className='home-mail'>
-              sagnikghoshmandra@gmail.com
+            <a href="mailto:hv2595@gmail.com" className='home-mail'>
+              hv2595@gmail.com
             </a>
           </div>
         </div>
         <div className='col-md-3 mb-5 mb-lg-0' data-aos='fade-up'>
           <img
             src={SGCartoon}
-            alt="Sagnik Cartoon"
+            alt="Harsha Cartoon"
             style={{height: '40vh', width: '40vh'}}
           />
         </div>
       </div>
 
       <p className="lead mb-4">
-        I am a third-year undergraduate Information Technology Student at KIIT University. I am amongst the top contributors in Github from India. I am an Full-Stack Intern at Kaglorsys & Flutter Developer Intern at Skillablers, presently leading the Microsoft Student Ambassadors Community KIIT. I am a Machine Learning Enthusiast also. My other interests are DevOps and UI/UX.
+      A Machine learning enthusiast and a vivid open source contributor with 2+ years of experience specializing in machine learning, application development, algorithms, and full-stack web development. Well‑versed and seasoned developer in Django Rest Framework, ReactJs, and Natural
+Language Processing. Aspire to become a socially responsible software architect.
       </p>
 
       <div className="btn-group mb-5">

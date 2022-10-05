@@ -7,6 +7,7 @@ import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion'
 ReactFC.fcRoot(FusionCharts, Chart, FusionTheme)
 
 const ChartComponent = ({ data }) => {
+  console.log("data", data)
   const chartConfigs = {
     type: 'pie3d',
     width: '100%',

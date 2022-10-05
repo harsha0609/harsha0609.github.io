@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import Section from "../components/Section"
 import Skill from "../components/Skill"
 import Pie3D from "../components/Chart/Pie3D"
-import { SiAndroidstudio, SiAngular, SiCss3, SiDart, SiDocker, SiElectron, SiFirebase, SiFlask, SiFlutter, SiGit, SiGithub, SiGitlab, SiHtml5, SiIntellijidea, SiJava, SiJavascript, SiJupyter, SiKeras, SiKubernetes, SiMongodb, SiNodeDotJs, SiPostgresql, SiPostman, SiPython, SiReact, SiTensorflow, SiVisualstudiocode, SiVueDotJs } from "react-icons/si"
+import { SiAndroidstudio, SiAngular, SiCss3, SiDjango, SiDocker, SiElectron, SiFirebase, SiFlask, SiFlutter, SiGit, SiGithub, SiGitlab, SiHtml5, SiIntellijidea, SiJava, SiJavascript, SiJupyter, SiKeras, SiKubernetes, SiMongodb, SiNodeDotJs, SiPostgresql, SiPostman, SiPython, SiReact, SiTensorflow, SiVisualstudiocode, SiVueDotJs } from "react-icons/si"
 import { BsTerminalFill } from "react-icons/bs"
 
 const Skills = () => {
@@ -12,31 +12,31 @@ const Skills = () => {
   let data = {
     skills: [
       {
+        title: "Python",
+        progress: "85%",
+      }, 
+      {
         title: "C / C++",
-        progress: "75%",
+        progress: "50%",
       },
       {
         title: "Java",
-        progress: "75%",
+        progress: "45%",
       },
       {
         title: "Javascript",
-        progress: "65%",
-      },
+        progress: "75%",
+      },   
       {
-        title: "Python",
-        progress: "45%",
-      },    
-      {
-        title: "HTML",
+        title: "HTML/CSS",
         progress: "90%",
       },
       {
-        title: "CSS",
+        title: "Machine Learning",
         progress: "80%",
       },      
       {
-        title: "Dart",
+        title: "SQL / Database Management",
         progress: "65%",
       },
     ],
@@ -46,44 +46,20 @@ const Skills = () => {
         progress: "90%",
       },
       {
-        title: "Flutter",
-        progress: "85%",
-      },
-      {
-        title: ".NET",
-        progress: "70%",
-      },
-      {
-        title: "Angular.js",
-        progress: "65%",
-      },
-      {
-        title: "Vue.js",
-        progress: "60%",
-      },
-      {
         title: "Redux",
         progress: "80%",
       },
       {
-        title: "Framer Motion",
+        title: "NodeJS",
         progress: "40%",
       },
       {
-        title: "Photoshop / Figma / UI / UX",
+        title: "TensorFlow with Keras",
         progress: "60%",
       },
       {
         title: "Django",
         progress: "50%",
-      },
-      {
-        title: "Bootstrap",
-        progress: "70%",
-      },
-      {
-        title: "Material-UI",
-        progress: "80%",
       },
     ],
   }
@@ -92,6 +68,8 @@ const Skills = () => {
     fetch("https://api.github.com/users/sagnikghoshcr7/repos?per_page=100")
       .then((res) => res.json())
       .then((data) => setRepoItems(data))
+
+      console.log('items', repoItems)
   }
 
   useEffect(() => {
@@ -124,6 +102,7 @@ const Skills = () => {
       return total
     }, {})
 
+    console.log("lang", languages)
     const mostUsed = Object.values(languages)
       .sort((a, b) => {
         return b.value - a.value
@@ -132,6 +111,7 @@ const Skills = () => {
     setDataSource(mostUsed)
   }, [repoItems])
 
+  
   const { skills, frameworks } = data
 
   const skillsJsx = skills.map((skill, index) => (
@@ -178,16 +158,13 @@ const Skills = () => {
 
   const iconsSet2 = [
     {
-      icon: <SiJava />,
+      icon: <SiJavascript />,
     },
     {
       icon: <SiPython />,
     },
     {
-      icon: <SiDart />,
-    },
-    {
-      icon: <SiJavascript />,
+      icon: <SiJava />,
     },
   ]
 
@@ -199,7 +176,7 @@ const Skills = () => {
       icon: <SiKeras />,
     },
     {
-      icon: <SiFlask />,
+      icon: <SiDjango />,
     },
     {
       icon: <SiFlutter />,
@@ -215,12 +192,6 @@ const Skills = () => {
     },
     {
       icon: <SiReact />,
-    },
-    {
-      icon: <SiAngular />,
-    },
-    {
-      icon: <SiVueDotJs />,
     },
     {
       icon: <SiElectron />,
@@ -257,26 +228,21 @@ const Skills = () => {
     },
     {
       icon: <SiIntellijidea />,
-    },
-    {
-      icon: <SiAndroidstudio/>,
-    },
+    },   
     {
       icon: <SiPostman />,
     },
-    {
-      icon: <BsTerminalFill />,
-    },
+   
   ]
 
   return (
     <Section id="skills" title="Skills">
-      <div className="subheading mb-3">Coding Languages</div>
+      <div className="subheading mb-3">Programming</div>
       <div className="row mb-4">{skillsJsx}</div>
       <div className="subheading mb-3">Frameworks / Libraries</div>
       <div className="row mb-4">{frameworksJsx}</div>
-      <div className="subheading mb-3">Languages used as per Github</div>
-      <div className="row mb-4" >{languagesUsedChart}</div>
+      {/* <div className="subheading mb-3">Languages used as per Github</div>
+      <div className="row mb-4" >{languagesUsedChart}</div> */}
       <div className="subheading mb-3">Programming Languages, Tools & Technologies</div>
       <div>
         {iconsSet1.map(({ icon }, index) => (
