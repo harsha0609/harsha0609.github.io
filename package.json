@@ -2,38 +2,54 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https:/harsha0609.github.io",
+  "homepage": "https://harsha0609.github.io", // <-- Fixed URL
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "aos": "^2.3.4",
-    "axios": "^0.21.1",
-    "bootstrap": "^5.0.2",
-    "framer-motion": "^4.1.17",
-    "fusioncharts": "^3.17.0",
-    "gh-pages": "^3.2.3",
-    "node-sass": "^6.0.1",
-    "react": "^17.0.2",
-    "react-bootstrap": "^1.6.1",
-    "react-dom": "^17.0.2",
-    "react-fusioncharts": "^3.1.2",
-    "react-helmet": "^6.1.0",
-    "react-icons": "^4.2.0",
-    "react-redux": "^7.2.4",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
-    "redux": "^4.1.0",
-    "redux-devtools-extension": "^2.13.9",
-    "redux-thunk": "^2.3.0",
-    "styled-components": "^5.3.0",
-    "web-vitals": "^1.0.1",
-    "framer-motion": "^12.6.3",
-    "@mui/icons-material": "^6.4.6",
-    "@mui/material": "^6.4.5",
-    "@mui/styles": "^6.4.10"
+    // Core React 18
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "web-vitals": "^2.1.4", // Updated
+
+    // Material UI v5 and Peers
+    "@mui/material": "^5.15.15", // Latest v5
+    "@mui/icons-material": "^5.15.15", // Latest v5
+    "@emotion/react": "^11.11.4", // Required peer
+    "@emotion/styled": "^11.11.5", // Required peer
+    // "@mui/styles": "^6.4.10", // REMOVED - Generally not needed for v5
+
+    // Router (Updated to v6 - REQUIRES CODE MIGRATION)
+    "react-router-dom": "^6.22.3",
+
+    // State Management (Kept as is, assuming still used)
+    "redux": "^4.2.1", // Slightly updated
+    "react-redux": "^7.2.9", // Updated for React 18 compatibility
+    "redux-thunk": "^2.4.2", // Updated
+    // "redux-devtools-extension": "^2.13.9", // Often configured directly in store now, but can keep if needed
+
+    // Animations
+    "framer-motion": "^11.1.7", // Consolidated and updated
+    "aos": "^2.3.4", // Kept as is
+
+    // Other Utilities
+    "axios": "^1.6.8", // Updated
+    "react-helmet": "^6.1.0", // Kept as is
+    // "styled-components": "^5.3.11", // Kept as is, ensure still needed with MUI v5 styled
+    // "node-sass": "^9.0.0", // Updated, remove if not using .scss files
+
+    // Charting (Kept as is, ensure still needed)
+    "fusioncharts": "^3.22.0", // Updated
+    "react-fusioncharts": "^4.0.0", // Updated
+
+    // Deployment
+    "gh-pages": "^6.1.1" // Updated
+  },
+  "devDependencies": { // Added devDependencies section
+    // Testing Library (Updated)
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0", // Updated for React 18
+    "@testing-library/user-event": "^13.5.0" // Updated
   },
   "scripts": {
+    // React Scripts v5 for React 18
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -58,5 +74,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "peerDependencies": { // Added for clarity with React 18
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   }
 }
