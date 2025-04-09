@@ -31,7 +31,7 @@
     "framer-motion": "^12.6.3",
     "@mui/icons-material": "^6.4.6",
     "@mui/material": "^6.4.5",
-    "@mui/styles": "^6.4.10",
+    "@mui/styles": "^6.4.10"
   },
   "scripts": {
     "start": "react-scripts start",
